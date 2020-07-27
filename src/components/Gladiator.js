@@ -9,8 +9,10 @@ class Gladiator extends Component {
     gladiator: null
   };
 
-  constructor() {
-    super()
+
+
+  constructor(props) {
+    super(props)
     const factory = new GladiatorFactory(GladiatorModel);
     this.state.gladiator = factory.generateOne()
   }
@@ -48,6 +50,11 @@ class Gladiator extends Component {
   }
 
   render() {
+    if(this.props.rightArm) {
+      const gladiator = this.state.gladiator
+      console.log(gladiator.body.model.rightHand)
+
+    }
 
     const fighter1 = React.createElement('svg', {
       "xmlns": "http://www.w3.org/2000/svg",
