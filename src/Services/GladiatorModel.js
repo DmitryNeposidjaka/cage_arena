@@ -30,6 +30,10 @@ class GladiatorModel extends(Model) {
     this.body = gladiatorObject.body
     this.stuff = gladiatorObject.stuff
   }
+
+  disablePart(part) {
+    this.body.disablePart(part)
+  }
 }
 
 export default GladiatorModel

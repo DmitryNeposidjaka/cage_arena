@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import gladiator from '../gladiator.json'
-import Body from './Body'
+import Body from './Body/Body'
 
 
 class GladiatorFactory {
